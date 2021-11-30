@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html><!-- h1 {} // element h1
+  .special {} // all elements with class special
+  a:hover {} // all links when hovering
+  a.special {} // all links with class special
+  h1, h2 {} // all h1s and h2s
+  
+  a#very-special {} // the link with id very-special
+  a.special.highlighted {}  // the link with the class special AND highlighted
+  a, .special {} // links OR all elements with class of special
+  li .special {} // all elements with class special within any li 
+  
+  
+  CSS selectors
+  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>adv CSS Selectors</title>
+
+    <style>
+      header p small {
+        color: red;
+        display: block;
+      }
+      #tc {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        She Codes
+        <p>
+          Coding workshop for women
+
+          <small> Read all<span id="tc"> terms and conditions</span> </small>
+        </p>
+      </h1>
+    </header>
+  </body>
+</html>
