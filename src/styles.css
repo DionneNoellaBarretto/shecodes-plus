@@ -1,0 +1,56 @@
+body, #header, .instructions{
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #000;
+}
+
+body{
+  width: 100vw;
+  height: 95vh;
+}
+
+#header{
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #000;
+  font-size: 3rem;
+}
+
+.instructions{
+  font-size: 1.2rem;
+}
+
+.container{
+  padding: 1rem;
+}
+
+.city{
+  border-radius: 1rem;
+  display: inline-block;
+  margin: 0.2rem;
+  padding: 0.1rem;
+  text-align: center;
+}
+
+.form1{
+  text-align: center;
+  width: 95vw;
+  input[type=text]{width:430px !important;}
+}
+
+
+#footer, #header, .instructions{
+text-align: center;
+}
+
+a:link{
+  color: blue;
+}
+
+a:visited{
+color: green;
+}
+
+a:hover{
+  color: purple;
+  transform: scale(1.7); /* Equal to scaleX(0.7) scaleY(0.7) */
