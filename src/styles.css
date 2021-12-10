@@ -1,23 +1,27 @@
-body, #header, .instructions{
+ #header, .instructions, .city-specifics{
   margin: 1rem;
   padding: 1rem;
   border: 1px solid #000;
 }
 
 body{
-  width: 100vw;
-  height: 95vh;
+  width: 98vw;
+  height: 97vh;
+  background-image: url(./weather.jpg);
 }
 
 #header{
+  text-align: center;
   margin: 1rem;
   padding: 1rem;
   border: 1px solid #000;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .instructions{
   font-size: 1.2rem;
+  border-radius: 1rem;
+  text-align: center;
 }
 
 .container{
@@ -30,18 +34,48 @@ body{
   margin: 0.2rem;
   padding: 0.1rem;
   text-align: center;
+  background-color:antiquewhite;
 }
 
-.form1{
+.cards{
+  display: inline-block;
+  margin: 0.2rem;
+  padding: 0.1rem;
   text-align: center;
-  width: 95vw;
-  input[type=text]{width:430px !important;}
+  height: 12rem;
+  justify-content: space-between;
 }
 
-
-#footer, #header, .instructions{
-text-align: center;
+.container {
+  margin-top: 2px;
+  display: block;
+  margin: 0 auto;
 }
+
+.btn:hover {
+  color: rgb(44, 24, 224)
+}
+
+.input-text:focus {
+  box-shadow: 0px 0px 0px;
+  border-color: #7546f8;
+  outline: 0px;
+}
+
+.form-control {
+  border: 1px solid #467ef8
+}
+
+.city-specifics, .currentTemp{
+  text-align: center;
+  background-color:antiquewhite;
+}
+
+#footer,.instructions{
+  margin: 1rem;
+background-color:antiquewhite;
+}
+
 
 a:link{
   color: blue;
@@ -54,3 +88,4 @@ color: green;
 a:hover{
   color: purple;
   transform: scale(1.7); /* Equal to scaleX(0.7) scaleY(0.7) */
+}
