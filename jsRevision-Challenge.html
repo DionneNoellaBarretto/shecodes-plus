@@ -10,6 +10,7 @@
 
   <script >
 let qn = prompt("What is your name?");
+qn = qn.trim(); // accounting for spaces..
 if (qn === "") {
   alert("Too bad for you!"); 
 }
