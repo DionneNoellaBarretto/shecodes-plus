@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Dates</title>
+</head>
+
+<body>
+
+  <h1>JS Dates</h1>
+  <h2 class="date"></h2>
+  <!-- done using js -->
+  <script>
+    let now = new Date(); // precise time right now in the moment
+    console.log(now);
+    console.log(now.getMonth());
+    console.log(now.getFullYear());
+    console.log(now.getDate());
+    console.log(now.getDay());
+
+    let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    let month = months[now.getMonth()];
+
+    let date = now.getDate();
+    let hour = now.getHours();
+    let minutes = now.getMinutes();
+    let year = now.getFullYear();
+    let h2 = document.querySelector(".date");
+
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thurs", "Fri", "Sat"];
+    let day = days[now.getDay()];
+
+    h2.innerHTML = `${day} ${month} ${date}, ${hour}:${minutes} ${year}`;
+  </script>
+</body>
+
+</html>
