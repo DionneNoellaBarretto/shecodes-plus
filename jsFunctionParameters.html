@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Function PArameterss</title>
+  </head>
+  <body>
+    <script>
+// keep functions outside of other functions for simplicility sake!
+function username(name){
+  alert(`Hello, ${name}`);
+}
+
+      // function verb() - syntax
+      // temp (temporary variable) is a pseudo name that places the 10 (parameter) passed at the time of invokation...
+      function welcomeUser(temp,name) {
+        username(name);
+        // let temp = input("Please enter a temp");
+        if (temp > 15) {
+          alert(`Its a warm day, ${name}! `);
+        } else {
+          alert(`Its a cold day, ${name}! `);
+        }
+
+      //  or without temp literals...
+  // alert("Welcome to SheCodes, " + name);
+}
+
+
+      // activating the function!
+      welcomeUser(10, "Matt");
+      welcomeUser(20, "Steve");
+      welcomeUser(-2, "Chris");
+    </script>
+  </body>
+</html>
