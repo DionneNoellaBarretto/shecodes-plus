@@ -1,43 +1,61 @@
- #header, .instructions, .city-specifics{
-  margin: 1rem;
-  padding: 1rem;
-  border: 1px solid #000;
+#header,
+.city-specifics {
+  margin: 0.7rem;
+  padding: 0.8rem;
 }
 
-body{
+body {
   width: 98vw;
   height: 97vh;
-  background-image: url(./weather.jpg);
+  background-image: url(./src/weather.jpg);
 }
 
-#header{
+#header {
   text-align: center;
   margin: 1rem;
   padding: 1rem;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
+  text-decoration: double;
   font-size: 3.5rem;
 }
 
-.instructions{
+h1 {
+  text-align: center;
+  margin: 0.001rem;
+  padding: 0.01rem;
+  font-size: 3.5rem;
+  color: white;
+}
+h5 {
+  text-decoration: underline;
+  text-align: center;
+  margin: 0.001rem;
+  padding: 0.003rem;
+  font-size: 1.5rem;
+}
+
+.instructions {
   font-size: 1.2rem;
+  margin: 1.4rem;
+  padding: 1.3rem;
   border-radius: 1rem;
   text-align: center;
 }
 
-.container{
+.container {
   padding: 1rem;
 }
 
-.city{
+.city {
   border-radius: 1rem;
   display: inline-block;
   margin: 0.2rem;
   padding: 0.1rem;
   text-align: center;
-  background-color:antiquewhite;
+  background-color: antiquewhite;
 }
 
-.cards{
+.cards {
   display: inline-block;
   margin: 0.2rem;
   padding: 0.1rem;
@@ -53,7 +71,7 @@ body{
 }
 
 .btn:hover {
-  color: rgb(44, 24, 224)
+  color: rgb(44, 24, 224);
 }
 
 .input-text:focus {
@@ -63,29 +81,30 @@ body{
 }
 
 .form-control {
-  border: 1px solid #467ef8
+  border: 1px solid #467ef8;
 }
 
-.city-specifics, .currentTemp{
+.city-specifics,
+.currentTemp {
   text-align: center;
-  background-color:antiquewhite;
+  background-color: antiquewhite;
 }
 
-#footer,.instructions{
+#footer,
+.instructions {
   margin: 1rem;
-background-color:antiquewhite;
+  background-color: antiquewhite;
 }
 
-
-a:link{
+a:link {
   color: blue;
 }
 
-a:visited{
-color: green;
+a:visited {
+  color: green;
 }
 
-a:hover{
+a:hover {
   color: purple;
   transform: scale(1.7); /* Equal to scaleX(0.7) scaleY(0.7) */
 }
